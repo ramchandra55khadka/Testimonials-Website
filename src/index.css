@@ -1,0 +1,131 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e8faff;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Testimonials Container */
+.testimonials {
+  text-align: center;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #f0fdfe;
+  max-width: 100%;
+  width: 690px; /* Default width */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Testimonials Quote */
+.testimonials-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 10px;
+  color: rgb(64, 13, 218);
+  line-height: 1.6;
+}
+
+/* Testimonials Author */
+.testimonials-author {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Navigation Button Section */
+.testimonials-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Space between buttons */
+}
+.quote-author {
+  height: 160px;
+  text-align: center;
+}
+
+/* Navigation Buttons */
+.testimonials-nav button {
+  padding: 12px 25px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  flex-grow: 1;
+}
+
+.testimonials-nav button:hover {
+  background-color: #0056b3;
+}
+
+.testimonials-nav button:active {
+  transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Adjustments for tablet and smaller screen */
+  .testimonials {
+    width: 90%; /* Make testimonials container more flexible */
+    padding: 30px;
+  }
+
+  .testimonials-quote {
+    font-size: 1rem; /* Slightly smaller font size on tablets */
+  }
+
+  .testimonials-author {
+    font-size: 0.9rem;
+  }
+
+  .testimonials-nav {
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    gap: 15px;
+  }
+
+  .testimonials-nav button {
+    width: 100%; /* Buttons take full width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjustments for small screens (phones) */
+  .testimonials {
+    padding: 20px;
+    width: 95%; /* Full width on mobile */
+  }
+
+  .testimonials-quote {
+    font-size: 0.9rem; /* Further reduce font size on small screens */
+  }
+
+  .testimonials-author {
+    font-size: 0.8rem;
+  }
+
+  .testimonials-nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .testimonials-nav button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
